@@ -27,6 +27,24 @@
     </dependency>
   </dependencies>
 
+   <distributionManagement>
+    <repository>
+      <uniqueVersion>false</uniqueVersion>
+      <id>shopingcrsestmn-releases</id>
+      <name>shopingcrsestmn-releases</name>
+      <url>http://52.172.37.106:8081/nexus/content/repositories/shopingcrsestmn-releases/</url>
+      <layout>default</layout>
+    </repository>
+    <snapshotRepository>
+      <uniqueVersion>true</uniqueVersion>
+      <id>shopingcrdestmn-snapshots</id>
+      <name>shopingcrdestmn-snapshots</name>
+      <url>http://52.172.37.106:8081/nexus/content/repositories/shopingcrdestmn-snapshots/</url>
+      <layout>legacy</layout>
+    </snapshotRepository>
+    
+  </distributionManagement>
+  
   <build>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
       <plugins>
